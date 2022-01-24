@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE products [
-<!ELEMENT products (#PCDATA)>
-<!ELEMENT product (productName, manufacturer, description, prices, productItems)>
+<!ELEMENT products (product+)>
+<!ELEMENT product (productName, manufacturer, description?, prices+, productItems)>
 <!ELEMENT productName (#PCDATA)>
 <!ELEMENT manufacturer (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
-<!ELEMENT prices (price+)>
+<!ELEMENT prices (#PCDATA)>
 <!ELEMENT productItems (#PCDATA)>
 
+<!ATTLIST product sku CDATA #REQUIRED>
+<!ATTLIST product createAt CDATA #REQUIRED>
+<!ATTLIST product shippable CDATA #REQUIRED>
+<!ATTLIST manufacturer id CDATA #REQUIRED>
 ]>
 
 <products>
