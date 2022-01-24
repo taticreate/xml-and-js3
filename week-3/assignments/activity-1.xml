@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE products [
+<!ELEMENT products (productName, manufacturer, description, prices, productItems)>
+<!ELEMENT productName (#PCDATA)>
+<!ELEMENT manufacturer (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT prices (price+)>
+<!ELEMENT productItems (#PCDATA)>
+
+]>
+
 <products>
   <product sku="BOS12DDF2" createdAt="2020-12-23T09:23:44" shippable="true">
     <productName>Dog Shirt Gift Basket</productName>
