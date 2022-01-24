@@ -9,7 +9,7 @@
 <!ELEMENT productItems (#PCDATA)>
 
 <!ATTLIST product sku CDATA #REQUIRED>
-<!ATTLIST product createAt CDATA #REQUIRED>
+<!ATTLIST product createdAt CDATA #REQUIRED>
 <!ATTLIST product shippable CDATA #REQUIRED>
 <!ATTLIST manufacturer id CDATA #REQUIRED>
 ]>
